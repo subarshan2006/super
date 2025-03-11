@@ -10,6 +10,15 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+      *{
+        margin: 0%;
+    }
+    div{
+        width: 50px;
+        height: 50px;
+        background-color: black;
+    }
 #A{
   text-align: center;
   width: 250px;
@@ -67,6 +76,52 @@ img{
   <div id="A"> <img src="https://th.bing.com/th/id/R.72c15514a42869247f580d7fbe6e0e54?rik=XXZtAT5XmSIOog&riu=http%3a%2f%2fwww.ejiusa.com%2findia_city_details%2fHumayuns%27tomb.jpg&ehk=HhSw2M7pjD0sOU7OtjHv%2bWmVKxA%2bdO59UhmI%2by%2fifVk%3d&risl=&pid=ImgRaw&r=0"height="150px" width="150" alt=""><p style="font-size: 15px;">The tomb was the first in the series of Mughal monuments that eventually led to the development of the Taj Mahal. Some beautiful gardens and Persian-style designs mark its premises.</p>
     <div><a href="https://en.wikipedia.org/wiki/Ajanta_Caves">learn more</a></div></div>
   <!-- <div id="A"> <img src="https://media.tripinvites.com/places/ajanta-and-ellora/ellora-caves/sculptures-in-ellora-caves-featured.jpg"height="150px" width="150" alt=""><p style="font-size: 15px;">The symbol of love, the Taj Mahal, was the brainchild of the Mughal Emperor Shah Jahan for his beloved wife, Mumtaz Mahal. This marvelous white marble mausoleum is world-famous for its excellent craftsmanship and is one of the Seven Wonders of the World.</p></div> -->
+    <div id="A" onmouseover="going()">
+    </div><br><br>
+    <div id="B" onmouseover="going1()">
+    </div><br><br>
+    <div id="C" onmouseover="going2()">
+    </div><br><br>
+    <div id="D" onmouseover="going3()">
+    </div><br><br>
+    <div id="E" onmouseover="going4()">
+    </div><br><br>
+    <div id="F" onmouseover="going5()">
+    </div><br><br>
+
+
+
+    <script>
+        var div1=document.getElementById("A")
+        var div2=document.getElementById("B")
+        var div3=document.getElementById("C")
+        var div4=document.getElementById("D")
+        var div5=document.getElementById("E")
+        var div6=document.getElementById("F")
+        function going(){
+            div1.style.width="1500px"
+            div1.style.transition="6s"
+        }
+        function going1(){
+            div2.style.width="1500px"
+            div2.style.transition="5s"
+        }
+        function going2(){
+            div3.style.width="1500px"
+            div3.style.transition="4s"
+        }
+        function going3(){
+            div4.style.width="1500px"
+            div4.style.transition="3s"
+        }
+        function going4(){
+            div5.style.width="1500px"
+            div5.style.transition="2s"
+        }
+        function going5(){
+            div6.style.width="1500px"
+            div6.style.transition="1s"
+        }
 </div>
 <br><br><br>
 </body>
