@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        #button1{
+                position: absolute;
+align-content: center;
+                 text-align: center;
+                 margin: 50%;
+                 size: 50px;
+                 padding: 20px;
+                 background-color: rgb(36, 34, 34);
+                 color: white;
+        }
+        #div1{
+          
+          width: 100px;
+          height: 1000px;
+        }
+        #button2{
+            position: absolute;
+            text-align: center;
+            margin: 50%;
+            size: 50px;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            display: none;
+            transition: 5s;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        section {
+            margin: 20px;
+        }
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .project {
+            width: 300px;
+            padding: 20px;
+            color: rgb(0, 0, 0);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        #notnow{
+              display: none;
+        }
+    </style>
+</head>
+<body id="div3">
+    <div id="div1">
+
+    <button id="button1" onclick="toggle()">Toggle dark</button>
+    <button id="button2" onclick="toggleto()">Toggle white</button>
+</div>
+<div id="notnow">
+
+    <section>
+        <h2 style="color: white;">About Me</h2>
+        <p id="about"  style="color: white;">Hello! I'm a web developer passionate about creating amazing websites.</p>
+        <button onclick="changeAbout()"  style="color: white;">Change About Text</button>
+    </section>
+    <section>
+        <h2  style="color: white;">Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>A simple project description.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Another awesome project.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Contact me at: superson@gmail.com</p>
+    </footer>
+</div>
+
+        
+    <script>
+        var div=document.getElementById("div3")
+        var button=document.getElementById("button1")
+       var button2=document.getElementById("button2")
+       var notnow=document.getElementById("notnow")
+       
+        function changeAbout() {
+            document.getElementById("about").innerText = "Welcome to my portfolio! I love coding and designing user-friendly experiences.";
+        }
+    
+           function toggle(){
+
+                div.style.backgroundColor= "black";
+                div.style.transition="5s";
+                button.style.backgroundColor="white";
+                notnow.style.display="block"
+                button.style.color="black";
+                button.style.display="none";
+                button.style.transition="5s";
+                button2.style.display="block"
+           }
+           function toggleto(){
+            div.style.backgroundColor= "white";
+                div.style.transition="5s";
+                button.style.backgroundColor="white";
+                notnow.style.display="none" 
+                button.style.color="white";
+                button.style.backgroundColor="black";
+                button.style.display="block";
+                button.style.transition="5s";
+                // button2.style.backgroundColor="black"
+                button2.style.display="none";
+           }
+    </script>
+</body>
+</html>
